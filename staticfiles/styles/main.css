@@ -39,7 +39,7 @@
 }
 
 #objects-list {
-    max-height: 40px;
+    max-height: 100px;
     overflow-y: scroll;
     position: relative;
     top: 30px;
