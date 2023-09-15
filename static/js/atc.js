@@ -1,6 +1,7 @@
 const input = document.getElementById('filter-input');
 const list = document.getElementById('objects-list');
 import WebSocket from 'ws';
+console.log("test");
 
 // Listen for changes to the input value.
 input.addEventListener('input', function() {
