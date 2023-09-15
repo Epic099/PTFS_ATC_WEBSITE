@@ -1,3 +1,4 @@
 body {
   background: url("/static/images/home_background.png");
+  background-repeat: no-repeat;
 }
