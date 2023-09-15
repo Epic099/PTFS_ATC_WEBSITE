@@ -2,7 +2,7 @@ const input = document.getElementById('filter-input');
 const list = document.getElementById('objects-list');
 import WebSocket from 'ws';
 console.log("test");
-
+console.log("test2");
 // Listen for changes to the input value.
 input.addEventListener('input', function() {
     // Get the filtered list of objects.
