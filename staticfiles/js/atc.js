@@ -1,6 +1,6 @@
 const input = document.getElementById('filter-input');
 const list = document.getElementById('objects-list');
-import WebSocket from 'ws';
+// import WebSocket from 'ws';
 
 // Listen for changes to the input value.
 input.addEventListener('input', function() {
@@ -30,7 +30,7 @@ list.addEventListener('click', function(event) {
 });
 
 
-const websocket = new Websocket(
+/*const websocket = new Websocket(
     "ws://"
     + window.location.host
     + 'ws/atc/'   
@@ -52,4 +52,4 @@ websocket.onopen = function(e) {
 message = "Lufthansa 1342"
 setTimeout(function(e) {
     websocket.send(JSON.stringify({"message" : message}))
-}, 2000);
+}, 2000);*/
