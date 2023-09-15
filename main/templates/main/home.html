@@ -1,0 +1,12 @@
+{% extends "main/base.html" %}
+
+{% block content %}
+
+<h2>Home</h2>
+
+{% if user.is_authenticated %}
+<label color="red">Logged in</label>
+
+{% endif %}
+
+{% endblock content %}

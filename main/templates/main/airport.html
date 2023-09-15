@@ -1,0 +1,27 @@
+{% extends "main/base.html" %}
+{% load static %}
+{% block content %}
+
+<h2>{{ICAO}} {{Callsign}}</h2>
+<div class="charts">
+    <div class="ground-charts">
+        {% for chart in Ground_Charts %}
+            <img width="706" height="100%" src="{% static chart %}">
+        {% endfor %}
+    </div>
+    <div class="airway-charts">
+        {% for chart in Airway_Charts %}
+            <img width="50%" height="100%" src="{% static chart %}">
+        {% endfor %}
+    </div>
+</div>
+<input type="text" id="filter-input" placeholder="Callsign">
+
+<ul id="objects-list">
+{% for object in aircrafts %}
+    <li>{{ object.Callsign }}</li>
+{% endfor %}
+</ul>
+<label class="output">Test</label>
+<script src="{% static 'js/atc.js' %}"></script>
+{% endblock content %}
