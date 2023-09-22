@@ -8,6 +8,16 @@
   background-color: lightgrey;
 }
 
+.aircraft-outbound {
+  padding-left: 3px; 
+  padding-right: 8px;
+  width: 250px; 
+  line-height: 1.6;   
+  border-style: solid; 
+  border-color: red;
+  background-color: lightgrey;
+}
+
 .aircraft-callsign {
   font-size: 12px; 
   font-weight: bold;
