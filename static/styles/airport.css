@@ -44,14 +44,14 @@ li:first-child {
 }
 
 .aircraft-small {
-  width: 30px; 
+  width: 40px; 
   height: 18px; 
   background-color: #eaeaea;
   border: 0px;
 }
 
 .aircraft-medium {
-  width: 50px; 
+  width: 60px; 
   height: 18px; 
   background-color: #eaeaea;
   border: 0px;
