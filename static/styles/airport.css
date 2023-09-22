@@ -27,6 +27,10 @@
   border: 0px;
 }
 
+ul {
+  width: 25%;  
+]
+
 ul#remove {
     list-style-type: none;
     padding: 0;
