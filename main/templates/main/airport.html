@@ -22,6 +22,7 @@
 
 <ul id="objects-list">
 {% for object in aircrafts %}
+<li>
     <div class="aircraft">
     <input class="aircraft-callsign" type="text" placeholder="Callsign" value={{object.Callsign}} />
     <button class="button-inbound">Inbound</button>
@@ -42,7 +43,8 @@
     <input class="aircraft-big" type="text" placeholder="Additional Infos">
   </div>
   </div>
-<br>
+
+</li>
 {% endfor %}
 </ul>
 <label class="output">Test</label>
