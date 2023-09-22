@@ -1,3 +1,9 @@
 .aircraft {
-
+  padding-left: 3px; 
+  padding-right: 8px;
+  width: 250px; 
+  line-height: 1.6;   
+  border-style: solid; 
+  border-color: green;
+  background-color: lightgrey;
 }
