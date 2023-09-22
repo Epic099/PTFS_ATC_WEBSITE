@@ -38,7 +38,8 @@ class Server():
         
         
         #Implement Other Charts types later
-        return Charts(ground_files, airway_charts)
+        #return Charts(ground_files, airway_charts)
+    return Charts(ground_files, None)
     def runway_valid(icao : str, runway : str):        
         runways = Airport_Data["Charts_Data"][icao]["Runways"]
         return runway in runways
