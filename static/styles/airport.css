@@ -8,6 +8,36 @@
   background-color: lightgrey;
 }
 
+.aircraft-callsign {
+  font-size: 12px; 
+  font-weight: bold;
+  width: 160px; 
+  height: 18px; 
+  background-color: #eaeaea; 
+  border: 0px;
+}
+
+.aircraft-small {
+  width: 30px; 
+  height: 18px; 
+  background-color: #eaeaea;
+  border: 0px;
+}
+
+.aircraft-medium {
+  width: 50px; 
+  height: 18px; 
+  background-color: #eaeaea;
+  border: 0px;
+}
+
+.aircraft-big {
+  width: 100%; 
+  height: 18px; 
+  background-color: #eaeaea; 
+  border: 0px;
+}
+
 .button-inbound {
   background-color: green; 
   color: white; 
