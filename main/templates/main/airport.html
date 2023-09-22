@@ -20,23 +20,23 @@
 <ul id="objects-list">
 {% for object in aircrafts %}
     <div class="aircraft">
-    <input style="font-size: 12px; 10px;font-weight: bold;; width: 160px; height: 18px; background-color: #eaeaea; border: 0px;" type="text" placeholder="Callsign" value={{object.Callsign}} />
-    <button style="background-color: green; color: white; margin-right:-8px; float: right; width: 70x; height: 20px; border: 0px;">Inbound</button>
+    <input class="aircraft-callsign" type="text" placeholder="Callsign" value={{object.Callsign}} />
+    <button class="button-inbound">Inbound</button>
   <br>
   <div style="line-height: 2;">  
-    <input style="width: 30px; height: 18px; background-color: #eaeaea; border: 0px;" type="text" placeholder="Dep">
-    <input style="width: 50px; height: 18px; background-color: #eaeaea; border: 0px;" type="text" placeholder="Aircraft">
-    <input style="width: 50px; height: 18px; background-color: #eaeaea; border: 0px;" type="text" placeholder="Altitude">
-    <input style="width: 30px; height: 18px; background-color: #eaeaea; border: 0px;" type="text" placeholder="Gate">
+    <input class="aircraft-small" type="text" placeholder="Dep">
+    <input class="aircraft-medium" type="text" placeholder="Aircraft">
+    <input class="aircraft-medium" type="text" placeholder="Altitude">
+    <input class="aircraft-small" type="text" placeholder="Gate">
     <br>
-    <input style="width: 30px; height: 18px; background-color: #eaeaea; border: 0px;" type="text" placeholder="Arr">
-    <input style="width: 50px; height: 18px; background-color: #eaeaea; border: 0px;" type="text" placeholder="Runway">
-    <input style="width: 50px; height: 18px; background-color: #eaeaea; border: 0px;" type="text" placeholder="Squawk">
-    <input style="width: 30px; height: 18px; background-color: #eaeaea; border: 0px;" type="text" placeholder="Info">
+    <input class="aircraft-small" type="text" placeholder="Arr">
+    <input class="aircraft-medium" type="text" placeholder="Runway">
+    <input class="aircraft-medium" type="text" placeholder="Squawk">
+    <input class="aircraft-small" type="text" placeholder="Info">
     <br>
-    <input style="width: 100%; height: 18px; background-color: #eaeaea; border: 0px;" type="text" placeholder="Taxi instructions">
+    <input class="aircraft-big" type="text" placeholder="Taxi instructions">
     <br>
-    <input style="width: 100%; height: 18px; background-color: #eaeaea; border: 0px;" type="text" placeholder="Additional Infos">
+    <input class="aircraft-big" type="text" placeholder="Additional Infos">
   </div>
   </div>
 {% endfor %}
