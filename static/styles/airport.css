@@ -34,7 +34,7 @@ ul#remove {
 
 li{
     margin-top: 10px;
-    border:1px solid grey;
+    border:0px solid grey;
 }
 
 li:first-child {
