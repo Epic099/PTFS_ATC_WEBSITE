@@ -17,6 +17,20 @@
   border: 0px;
 }
 
+ul#remove {
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    margin-top: 10px;
+    border:1px solid grey;
+}
+
+li:first-child {
+    margin-top:0;
+}
+
 .aircraft-small {
   width: 30px; 
   height: 18px; 
