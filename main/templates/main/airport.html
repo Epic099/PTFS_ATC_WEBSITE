@@ -45,6 +45,33 @@
 </li>
 {% endfor %}
 </ul>
+<ul id="objects-list">
+{% for object in aircrafts %}
+<li>
+    <div class="aircraft-outbound">
+    <input class="aircraft-callsign" type="text" placeholder="Callsign" value={{object.Callsign}} />
+    <button class="button-outbound">Outbound</button>
+  <br>
+  <div style="line-height: 2;">  
+    <input class="aircraft-small" type="text" placeholder="Dep">
+    <input class="aircraft-medium" type="text" placeholder="Aircraft">
+    <input class="aircraft-medium" type="text" placeholder="Altitude">
+    <input class="aircraft-small" type="text" placeholder="Gate">
+    <br>
+    <input class="aircraft-small" type="text" placeholder="Arr">
+    <input class="aircraft-medium" type="text" placeholder="Runway">
+    <input class="aircraft-medium" type="text" placeholder="Squawk">
+    <input class="aircraft-small" type="text" placeholder="Info">
+    <br>
+    <input class="aircraft-big" type="text" placeholder="Taxi instructions">
+    <br>
+    <input class="aircraft-big" type="text" placeholder="Additional Infos">
+  </div>
+  </div>
+
+</li>
+{% endfor %}
+</ul>
 <label class="output">Test</label>
 <script src="{% static 'js/atc.js' %}"></script>
 {% endblock content %}
