@@ -1,5 +1,8 @@
 {% extends "main/base.html" %}
 {% load static %}
+{% block head %}
+    <link ref="stylesheet" type="text/css" href="{% static 'styles/airport.css' %}">
+{% endblock %}
 {% block content %}
 
 <h2>{{ICAO}} {{Callsign}}</h2>
