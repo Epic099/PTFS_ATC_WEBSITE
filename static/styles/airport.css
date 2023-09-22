@@ -1,10 +1,20 @@
-.aircraft {
+.aircraft-inbound {
   padding-left: 3px; 
   padding-right: 8px;
   width: 250px; 
   line-height: 1.6;   
   border-style: solid; 
   border-color: green;
+  background-color: lightgrey;
+}
+
+.aircraft-outbound {
+  padding-left: 3px; 
+  padding-right: 8px;
+  width: 250px; 
+  line-height: 1.6;   
+  border-style: solid; 
+  border-color: red;
   background-color: lightgrey;
 }
 
@@ -15,6 +25,20 @@
   height: 18px; 
   background-color: #eaeaea; 
   border: 0px;
+}
+
+ul#remove {
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    margin-top: 10px;
+    border:1px solid grey;
+}
+
+li:first-child {
+    margin-top:0;
 }
 
 .aircraft-small {
@@ -40,6 +64,16 @@
 
 .button-inbound {
   background-color: green; 
+  color: white; 
+  margin-right:-8px; 
+  float: right; 
+  width: 70x; 
+  height: 20px; 
+  border: 0px;
+}
+
+.button-outbound {
+  background-color: red; 
   color: white; 
   margin-right:-8px; 
   float: right; 
