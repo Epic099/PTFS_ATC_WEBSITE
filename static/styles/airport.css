@@ -27,9 +27,6 @@
   border: 0px;
 }
 
-ul {
-  width: 25%;  
-]
 
 ul#remove {
     list-style-type: none;
@@ -39,6 +36,7 @@ ul#remove {
 li{
     margin-top: 10px;
     border:0px solid grey;
+    width: 25%;  
 }
 
 li:first-child {
