@@ -33,7 +33,7 @@ list.addEventListener('click', function(event) {
 const websocket = new WebSocket(
     "ws://"
     + window.location.host
-    + 'ws/atc/'   
+    + '/ws/atc/test_room'   
 )
 
 websocket.onmessaage = function(e) {
