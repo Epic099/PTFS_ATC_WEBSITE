@@ -28,12 +28,10 @@ list.addEventListener('click', function(event) {
     // Put the value into the input field.
     input.value = value;
 });*/
-
+let url = "ws://" + window.location.host + "/ws/atc" 
 
 const websocket = new WebSocket(
-    "ws://"
-    + window.location.host
-    + '/ws/atc/test_room'   
+    url   
 )
 
 websocket.onmessaage = function(e) {
