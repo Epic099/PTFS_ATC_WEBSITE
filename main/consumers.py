@@ -4,6 +4,7 @@ from asgiref.sync import async_to_sync
 
 class AtcConsumer(WebsocketConsumer):
     async def connect(self):
+        print("connection")
         self.room_group_name = "test_room"
         
         await self.channel_layer.group_add(
