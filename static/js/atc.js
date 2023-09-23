@@ -3,7 +3,7 @@ const list = document.getElementById('objects-list');
 console.log("test");
 console.log("test2");
 // Listen for changes to the input value.
-input.addEventListener('input', function() {
+/* input.addEventListener('input', function() {
     // Get the filtered list of objects.
     var filteredObjects = objects.filter(function(object) {
         return object.Callsign.toLowerCase().startsWith(input.value.toLowerCase());
@@ -27,7 +27,7 @@ list.addEventListener('click', function(event) {
 
     // Put the value into the input field.
     input.value = value;
-});
+});*/
 
 
 const websocket = new WebSocket(
