@@ -42,7 +42,7 @@ websocket.onmessaage = function(e) {
 };
 
 websocket.onclose = function(e) {
-    console.log("Websocket closed");
+    console.log("Websocket closed", e);
 };
 
 websocket.onopen = function(e) {
