@@ -1,7 +1,5 @@
 const input = document.getElementById('filter-input');
 const list = document.getElementById('objects-list');
-console.log("test");
-console.log("test2");
 // Listen for changes to the input value.
 /* input.addEventListener('input', function() {
     // Get the filtered list of objects.
@@ -28,31 +26,15 @@ list.addEventListener('click', function(event) {
     // Put the value into the input field.
     input.value = value;
 });*/
-let url = "ws://" + window.location.host + "/ws/atc" 
 
-const websocket = new WebSocket(
-    url   
-)
+let url = 'ws://' + window.location.host + '/ws/socket-server/';
+const socket = new WebSocket(url);
 
-websocket.onmessaage = function(e) {
-    var data = JSON.parse(e.data);
-    console.log("data");
-};
-
-websocket.onclose = function(e) {
-    console.log("Websocket closed", e);
-};
-
-websocket.onerror = function(evt)
-{
-    console.log(evt);
+socket.onmessage = function(e){
+    let data = JSON.parse(e.data);
+    console.log('Data: ', data);
 }
 
-websocket.onopen = function(e) {
-    console.log("Websocket opened");
-};
-
-message = "Lufthansa 1342"
 /*setTimeout(function(e) {
     websocket.send(JSON.stringify({"message" : message}))
 }, 2000);*/
