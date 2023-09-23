@@ -43,11 +43,16 @@ websocket.onclose = function(e) {
     console.log("Websocket closed", e);
 };
 
+websocket.onerror = function(evt)
+{
+    console.log(evt);
+}
+
 websocket.onopen = function(e) {
     console.log("Websocket opened");
 };
 
 message = "Lufthansa 1342"
-setTimeout(function(e) {
+/*setTimeout(function(e) {
     websocket.send(JSON.stringify({"message" : message}))
-}, 2000);
+}, 2000);*/
