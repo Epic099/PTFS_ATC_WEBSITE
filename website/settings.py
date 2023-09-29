@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-gq2p5m0w7-ph%08+o_4===bycdnk35eu)r&36pu^m=lhyy87o9
 DEBUG = True
 
 #ALLOWED_HOSTS = ["ptfsatc.pythonanywhere.com"]
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["ptfsatc.glitch.me"]
 
 
 # Application definition
