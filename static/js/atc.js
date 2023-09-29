@@ -27,7 +27,7 @@ list.addEventListener('click', function(event) {
     input.value = value;
 });*/
 
-let url = 'ws://' + window.location.host + '/ws/socket-server/';
+let url = 'wss://' + window.location.host + '/ws/socket-server/';
 const socket = new WebSocket(url);
 
 socket.onmessage = function(e){
